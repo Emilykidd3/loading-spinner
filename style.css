@@ -19,10 +19,11 @@
     height: 100%;
     border-radius: 50%;
     border: 15px solid transparent;
+    mix-blend-mode: overlay;
 }
 
 .spinner-sector-red {
-    border-left-color: lightcoral;
+    border-top-color: lightcoral;
 }
 
 .spinner-sector-blue {
@@ -30,5 +31,5 @@
 }
 
 .spinner-sector-green {
-    border-left-color: lightgreen;
+    border-right-color: lightgreen;
 }
