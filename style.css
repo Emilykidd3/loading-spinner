@@ -20,6 +20,7 @@
     border-radius: 50%;
     border: 15px solid transparent;
     mix-blend-mode: overlay;
+    animation: rotate 1.5s ease-in-out infinite;
 }
 
 .spinner-sector-red {
@@ -32,4 +33,14 @@
 
 .spinner-sector-green {
     border-right-color: lightgreen;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0)
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
 }
