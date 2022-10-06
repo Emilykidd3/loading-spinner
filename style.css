@@ -20,19 +20,26 @@
     border-radius: 50%;
     border: 15px solid transparent;
     mix-blend-mode: overlay;
-    animation: rotate 1.5s ease-in-out infinite;
+    animation: rotate var(--duration) var(--timing) infinite;
+    pointer-events: none;
 }
 
 .spinner-sector-red {
     border-top-color: lightcoral;
+    --duration: 1.5s;
+    --timing: ease-in-out;
 }
 
 .spinner-sector-blue {
     border-left-color: lightblue;
+    --duration: 2s;
+    --timing: ease-in;
 }
 
 .spinner-sector-green {
     border-right-color: lightgreen;
+    --duration: 2.5s;
+    --timing: ease-out;
 }
 
 @keyframes rotate {
@@ -42,5 +49,11 @@
 
     100% {
         transform: rotate(360deg);
+    }
+}
+
+@keyframes text-color {
+    0% {
+        color: rgba(0, 0, 0, 1);
     }
 }
